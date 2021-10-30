@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ALWebDev">
+    <meta name="description" content="Useful app which lets you generate and copy RGB values">
+    <meta name="keywords" content="RGB, red, green, blue, web design, graphics design, design, web, copy, html, css, javascript, web development, colors">
+    <title>RGB Color Mixer</title>
+    <link rel="stylesheet" href="colorsave-style.css">
+</head>
+<body>
+    <h2>Color Saver</h2>
+    <div class="container">
+        <div id="color-container">
+            <p id="hex"></p>
+        </div>
+        <div class="inputs-container">
+            <form>
+                <p class="name">Red</p>
+                <div class="colors">
+                    <input type="range" id="red" min="0" max="255" value="10" class="color">
+                    <input type="number" id="numRed" class="numColors">
+                </div>
+                <p class="name">Green</p>
+                <div class="colors">
+                    <input type="range" id="green" min="0" max="255" value="10" class="color">
+                    <input type="number" id="numGreen" class="numColors">
+                </div> 
+                <p class="name">Blue</p>
+                <div class="colors">
+                    <input type="range" id="blue" min="0" max="255" value="10" class="color">
+                    <input type="number" id="numBlue" class="numColors">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="buttonContainer">
+        <button id="saveButton">Save</button>
+        <button id="random_color">Generate Random Color</button>
+    </div>
+
+    <div id="records"></div>
+    <script src="colorsaver-script.js"></script>
+</body>
+</html>
